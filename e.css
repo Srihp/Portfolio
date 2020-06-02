@@ -1,0 +1,120 @@
+/* Demo */
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+/* Color Variables */
+/* Social Icon Mixin */
+/* Social Icons */
+.social-icons {
+  display: flex;
+}
+.social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 80px;
+  height: 80px;
+  margin: 0 0.5rem;
+  border-radius: 50%;
+  cursor: pointer;
+  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-size: 2.5rem;
+  text-decoration: none;
+  transition: all 0.15s ease;
+}
+.social-icon:hover {
+  color: #fff;
+}
+.social-icon:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+  transform: translate(-50%, -150%);
+}
+.social-icon:active {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5) inset;
+}
+.social-icon--linkedin {
+  background: #006599;
+  background-image: url("ln.png");
+  background-size: 60%;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff;
+}
+.social-icon--linkedin .tooltip {
+  background: #006599;
+  color: currentColor;
+}
+.social-icon--linkedin .tooltip:after {
+  border-top-color: #006599;
+}
+
+.social-icon--facebook {
+  background: lightgreen;
+  background-image: url("re.png");
+  background-size: 60%;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff;
+}
+.social-icon--facebook .tooltip {
+  background: lightgreen;
+  color: currentColor;
+}
+.social-icon--facebook .tooltip:after {
+  border-top-color: lightgreen; 
+}
+.social-icon--instagram {
+  background:#FD1D1D;
+  background-image: url("in.png");
+  background-size: 60%;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff;
+}
+.social-icon--instagram .tooltip {
+  background: #FD1D1D;
+  color: currentColor;
+}
+.social-icon--instagram .tooltip:after {
+  border-top-color: #FD1D1D ;
+}
+
+.social-icon i {
+  position: relative;
+  top: 1px;
+}
+/* Tooltips */
+.tooltip {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  padding: 0.8rem 1rem;
+  border-radius: 40px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  opacity: 0;
+  pointer-events: none;
+  text-transform: uppercase;
+  transform: translate(-50%, -100%);
+  transition: all 0.3s ease;
+  z-index: 1;
+}
+.tooltip:after {
+  display: block;
+  position: absolute;
+  bottom: 1px;
+  left: 50%;
+  width: 0;
+  height: 0;
+  content: "";
+  border: solid;
+  border-width: 10px 10px 0 10px;
+  border-color: transparent;
+  transform: translate(-50%, 100%);
+}

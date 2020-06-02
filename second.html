@@ -1,0 +1,425 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="home.css">
+	<script src="home.js"></script>
+</head>
+
+<body> 
+
+	<div id=home>
+		<nav role="navigation">
+				<div id="menuToggle">
+				  <!--
+				  A fake / hidden checkbox is used as click reciever,
+				  so you can use the :checked selector on it.
+				  -->
+				  <input type="checkbox" />
+				  
+				  <!--
+				  Some spans to act as a hamburger.
+				  
+				  They are acting like a real hamburger,
+				  not that McDonalds stuff.
+				  -->
+				  <span></span>
+				  <span></span>
+				  <span></span>
+				  
+				  <!--
+				  Too bad the menu has to be inside of the button
+				  but hey, it's pure CSS magic.
+				  -->
+				  <ul id="menu">
+					<a href="#home" id=h>Home</a>
+					<a href="#projects" id=p1>Projects</a>
+					<a href="#experience" id=p2>Experience</a>
+					<a href="#Certificates" id=c2>Certificates</a>
+					<a href="#Contact" id=c>Contact</a>
+	
+				  </ul>
+				</div>
+			  </nav>
+
+	<div id="logo">
+			<h1> Portfolio</h1>
+		</div>
+
+	<div id=bg>
+		
+	</div>
+  <section class="page1">
+	  
+	  		<div class=potrait>
+				  <img src="potrait.jpg">
+			  </div>
+			<div class="details">
+			<h1 class="m1">Sri Hari Parthasarathy</h1>
+				<p class= "sub1">Software Developer<br>& Data Engineer
+          	  	</p>	
+			</div>
+			
+		</section>
+		<div id="log">
+		
+		</div>
+	</div>
+
+	<div id="projects">
+
+	<section class="intro">
+		<div class="container">
+			<h1>Projects </h1>
+		</div>
+	</section>
+
+				<section class="timeline">
+						<ul>
+						  <li>
+							<div> 
+							  <b><u>Data Analysis Project</b></u>&nbsp;(2019)<br><br>
+							  Done using: AWS' EMR, AWS' S3 & Tableau.<br><br>
+							  Aim : To process a large data set using cloud technologies.<br><br>
+							  Description : Downloaded a dataset of nearly 1.6 GB on the staticstics of bike riders in chicago. 
+							  Uploaded this dataset into S3 and processed it using the EMR cluster. Once the result was available, 
+							  it was visulaized by using Tableau.<br><br>
+							  Knowledge gained : <br>
+							  1) Concepts of AWS.<br>
+							  2) Operating on S3 storage.<br>
+							  3) Operating on EMR cluster.<br>
+							  4) Operating on Tableau.
+							
+
+							</div>
+						  </li>
+						  <li>
+							<div>
+									<b><u>Solar panel performance project</b></u>&nbsp;(2019)<br>
+									Done using: Python and Excel.<br><br>
+							  		Aim : To process the test result of solar module and find its performance metrics.<br><br>
+									  Description : Once the solar module is tested in the lab, a set of curves are obtained. The curves are then converted
+									  into an excel workbook. Using Python's Pandas library the excel is read and the values are retrived which are later
+									  processed using the sklearn and numpy libraries. A UI was built using the tkinter library.<br><br>
+							  		Knowledge gained : <br>
+							  		1) Data processing using Python.<br>
+							  		2) Using Sklearn and Numpy.<br>
+							  		3) Using Pandas.<br>
+							  		4) Developing UI in python using tkinter.
+
+							</div>
+						  </li>
+						  <li>
+							<div>
+									<b><u>Kidney stone prediction project</b></u>&nbsp;(2019)<br>
+									Done using: Python.<br><br>
+							  		Aim : To process a medical dataset, to train the system to predict kideny problems in new patients.<br><br>
+									  Description : A medical dataset of many patients were fed using the pandas library to train the system. 
+									  Initially the dataset is normalised and then the data is used to train the system using the sklearn modules.
+									  Once normalised the system is tested with the remaining dataset. Post this, when a new user data is provided to the system, 
+									  the system is capable of predicting weather the new patient will have a kidney stone or not. This is visualized using libraries such
+									  as seaborn, pyplot.<br><br>
+							  		Knowledge gained : <br>
+							  		1) Machine Learning using Python.<br>
+							  		2) Using Sklearn and Numpy.<br>
+							  		3) Using Pandas.<br>
+							  		4) Using Seaborn.
+
+							</div>
+						  </li>
+				<div id = second>
+						  <li>
+							<div>
+									<b><u>Online Travel Project</b></u>&nbsp;(2018)<br>
+									Done using: HTML5, CSS3, JavaScript and PHP.<br><br>
+							  		Aim : To develop an online webiste to host content related to travellers.<br><br>
+									  Description : Developed a HTML webiste that hosted photos and content, that allowed user interaction
+									  in the form of comments. PHP functions were used to make the website run dynamically by having a user and
+									  an admin login page. that updated the comments dynamically. CSS was used for styling the web page, JavaScript
+									  was used to provide enhanced functionallities. <br><br>
+							  		Knowledge gained : <br>
+							  		1) Building webpages.<br>
+							  		2) Using HTML5<br>
+							  		3) Using CSS3<br>
+									4) Using PHP<br>
+									5) Using JavaScript
+  
+							</div>
+						  </li>
+						  <li>
+							<div>
+									<b><u>Bank Management Project</b></u>&nbsp;(2017)<br>
+									Done using: Python and SQLite.<br><br>
+							  		Aim : To develop an application that replicates the function of a bank.<br><br>
+									  Description : Developed a Python application that allowed the user to access and perform process on their accounts
+									  which were then shown in the back-end database. The functionalities of the database were done through SQLite. <br><br>
+							  		Knowledge gained : <br>
+							  		1) Developing in Python<br>
+							  		2) Using SQLite<br>
+
+							</div>
+						  </li>
+						  <li>
+							<div>
+
+							  <b><u>Olympic Ring Animation Project</b></u>&nbsp;(2017)<br>
+							  		Done using: Opengl and C.<br><br>
+							  		Aim : To develop an animation in C.<br><br>
+									Description : Developed an animation of an olympic ring using C and the Opengl libraries.
+									All the ring properties were done using Opengl <br><br>
+									Knowledge gained : <br>
+							  		1) Developing in C<br>
+							  		2) Using Opengl<br>
+							  
+
+							</div>
+						  </li>
+						  <li>
+							<div>
+
+							  <b><u>Movie Database Management</b></u>&nbsp;(2017)<br>
+							  Done using: C++ and SQLite<br><br>
+							  		Aim : To develop an application that allows the user to interact with a back-end database<br><br>
+									  Description : Developed a C++ application that allowed the user to access the database, perform operations on the 
+									  data such as Enter new data, Update existing data, View data, Delete existing data and so on. The back-end database was 
+									  developed using SQLlite. <br><br>
+							  		Knowledge gained : <br>
+							  		1) Developing in C++<br>
+							  		2) Using SQLite<br>
+
+							</div>
+						  </li>
+						</div>	
+						  
+	        </ul>
+			</section>
+		</p>
+	
+	</div>
+
+	
+	<div id="experience">
+		<h1 id=exp>Experience</h1>
+
+		<div class="center">
+
+			<div class="card">
+				<div class="additional">
+					<div class="user-card">
+						<div class="level center">
+							ASU
+						</div>
+						<div id=i1><img src="ta.png"></div>
+						<div class="points center">
+							2019
+						</div>
+						  
+					</div>
+					<div class="more-info">
+						<h1>Teaching Assistant</h1>
+						<div class="coords">
+							<span>Arizona State University<br>Currently Working</span>
+						  </div>
+						  <div class="coords">
+							<span>Mesa, USA</span>
+						  </div>
+						  <div>
+								<br><div id= kg2>Knowledge gained : </div><div id=desc2>Big Data Processing and Analysis and Mangement skills</div>
+								<br><div id= kg3>Domain : </div><div id=desc3>Big Data</div>
+							</div>
+						</div>
+					  </div>
+					  <div class="general">
+						<h1>Teaching Assistant</h1>
+						<p> This post was for an 300 level course called Big Data tools and techniques. The main role of the job is help students 
+							and grade their work. The weekly tasks of the job included - grading nearly 150 submissions each week, Hellping students with
+							any doubts they have related to the subject and also to read up on next week's topics.
+			
+						</p>
+						<span class="more">Mouse over the card for more info</span>
+					  </div>
+					</div>
+				  
+					<div class="card green">
+					  <div class="additional">
+						<div class="user-card">
+						  <div class="level center">
+							<div id=dj>Djax Technologies</div>
+						  </div>
+						  <div id=i2><img src="intern.png"></div>
+						  <div class="points center">
+							2018
+						  </div>
+					</div>
+						<div class="more-info">
+						  <h1>Intern</h1>
+						  <div class="coords">
+							<span>Djax Technologies <br> July 2018 - August 2018</span>
+						  </div>
+						  <div class="coords">
+							
+							<span>Bangalore,India</span>
+						  </div>
+						  <div>
+							  <br><div id= kg>Knowledge gained : </div><div id=desc>Data Migration</div>
+							  <br><div id= kg1>Domain : </div><div id=desc1>Database Management and Javascript</div>
+						  </div>
+						</div>
+					  </div>
+					  <div class="general">
+						<h1>Intern</h1>
+						<p>The role of this internship was train and learn the concepts of database management and Javascript. The Intership domain
+							was in data migration, where the concepts of how data is migrated, the steps and involved were taught. Later on concepts of Javascrip
+							were also taught. As an intern I had to migrate a data from an existing excel to an SQL database.
+						</p>
+						<span class="more">Mouse over the card for more info</span>
+					  </div>
+					</div>
+				  
+				</div>
+				  
+				  
+	</div>
+
+	<div id="Certificates">
+
+		<div class="row">
+							<div class="section-categories">
+						
+							<header class="categories-header">
+								<h1>
+									 Certificates
+								</h1>
+						
+						
+							</header>
+						
+							<div class="mini-card-grid">
+
+									<div class="mini-card">
+											<div class="mini-card-title">
+								
+												<h2 class="">
+													Python
+												</h2>
+											</div>
+								
+											<div class="mini-card-description">
+												IIT Bombay Spoken Tutorial on Python.<br><br>
+												Udemy- core and advanced python.
+											</div>
+										</div>
+						
+								<div class="mini-card">
+										<div class="mini-card-title">
+						
+											<h2 class="">
+												SQL
+											</h2>
+										</div>
+						
+										  <div class="mini-card-description">
+											  IIT Bombay Spoken Tutorial on SQL.<br><br>
+											  Infosys Campus Connect Program.
+										  </div>
+								</div>
+						
+								<div class="mini-card">
+									<div class="mini-card-title">
+						
+										<h2 class="">
+											C++
+										</h2>
+									</div>
+						
+									<div class="mini-card-description">
+										IIT Bombay Spoken Tutorial on C++.
+									</div>
+								</div>
+						
+								<div class="mini-card">
+									<div class="mini-card-title">
+						
+										<h2 class="">
+											Java
+										</h2>
+									</div>
+						
+									<div class="mini-card-description">
+										IIT Bombay Spoken Tutorial on Java.
+									</div>
+								</div>
+
+								<div class="mini-card">
+										<div class="mini-card-title">
+							
+											<h2 class="">
+												C
+											</h2>
+										</div>
+							
+										<div class="mini-card-description">
+											IIT Bombay Spoken Tutorial on C.<br><br>
+											
+										</div>
+									</div>
+						
+								
+						
+							</div>
+						
+						</div>
+						
+						</div>
+					
+		
+		</div>
+
+		<div id="Contact">
+			<div id=cd>
+				<h2>
+					Would love to hear from you
+				</h2>
+				
+			</div>
+			<br><br><br><br>	
+			<form action="POST" data-netlify="true">      
+				<input name="name" type="text" class="feedback-input" placeholder="Name" />   
+				<input name="email" type="text" class="feedback-input" placeholder="Email" />
+				<textarea name="text" class="feedback-input" placeholder="Comment"></textarea>
+				<input type="submit" value="SUBMIT"/>
+			</form>
+
+			<div id="cl">
+			<ul class="contact-list">
+               
+                <br><br>
+                <li class="list-item"><i class="fa fa-phone fa-2x"><span class="contact-text phone"><a href="tel:1-408-646-0670" title="Give me a call">(408) 646-0670</a></span></i></li>
+                <br><br>
+                <li class="list-item"><i class="fa fa-envelope fa-2x"><span class="contact-text gmail"><a href="mailto:sparth11@email.asu.edu" title="Send me an email">sparth11@asu.edu</a></span></i></li>
+                
+			</ul>
+			<br><br>
+			<div class="social-icons">
+                
+                <a class="social-icon social-icon--instagram" href="https://www.instagram.com/shp.jpg/">
+                  <i class="fa fa-instagram"></i>
+                  <div class="tooltip">Instagram</div>
+                </a>
+                <a class="social-icon social-icon--linkedin" href="https://www.linkedin.com/in/srihp/">
+                        
+                  <i class="fa fa-linkedin"></i>
+                  <div class="tooltip">LinkedIn</div>
+                </a>
+                <a class="social-icon social-icon--facebook" href="Resume.pdf" download>
+                  <i class="fa fa-facebook"></i>
+                  <div class="tooltip">Resume</div>
+                </a>
+              </div>
+
+		
+	</div>
+
+
+	</body>
+</html>
